@@ -1,45 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Four card feature section</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  
-  Reliable, efficient delivery
-  Powered by Technology
-
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
-
-  Supervisor
-  Monitors activity to identify project roadblocks
-
-  Team Builder
-  Scans our talent network to create the optimal team for your project
-
-  Karma
-  Regularly evaluates our talent to ensure quality
-
-  Calculator
-  Uses data from past projects to provide better delivery estimates
-
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Poppins;
+        font-size: 15px;
+        background-color: #fafafa;
+        color: hsl(234, 12%, 34%);
+      }
+    </style>
+  </head>
+  <body class="mt-[3rem]">
+    <div>
+      <header class="flex flex-col items-center mb-[5rem] gap-2">
+        <h1 class="tracking-[0.2px] font-[200] text-[30px] mb-[-8px]">
+          Reliable, efficient delivery
+        </h1>
+        <h2 class="tracking-[0.2px] font-[600] text-[30px]">
+          Powered by Technology
+        </h2>
+        <h3 class="tracking-[0.2px] text-center max-w-[14cm] text-[14px]">
+          Our Artificial Intelligence powered tools use millions of project data
+          points to ensure that your project is successful
+        </h3>
+      </header>
+      <!-- CARDS DIV HERE -->
+      <div
+        class="flex flex-col md:flex-row gap-[4rem] md:gap-4 lg:gap-8 items-center justify-center mb-8 mx-2"
+      >
+        <div
+          class="flex flex-col justify-between items-end bg-white w-[380px] h-[310px] md:w-[240px] md:h-[200px] lg:w-[380px] lg:h-[300px] shadow-lg p-8 md:p-5 lg:p-8 rounded-b-xl border-t-6 border-[hsl(180,62%,55%)] rounded-t-sm"
+        >
+          <div class="mr-2">
+            <h1 class="font-[600] text-[22px] mb-2">Supervisor</h1>
+            <p class="font-[300]">
+              Monitors activity to identify project roadblocks
+            </p>
+          </div>
+          <img
+            src="./images/icon-supervisor.svg"
+            alt="glass"
+            class="w-[5rem] h-[5rem] md:w-[3rem] md:h-[3rem] lg:w-[5rem] lg:h-[5rem]"
+          />
+        </div>
+        <!-- MIDDLE CARDS DIV HERE -->
+        <div class="flex flex-col gap-[4rem] md:gap-4 lg:gap-8">
+          <div
+            class="flex flex-col justify-between items-end bg-white w-[380px] h-[310px] md:w-[240px] md:h-[200px] lg:w-[380px] lg:h-[300px] shadow-lg p-8 md:p-5 lg:p-8 rounded-b-xl border-t-6 border-[hsl(212,86%,64%)] rounded-t-sm"
+          >
+            <div class="mr-2">
+              <h1 class="font-[600] text-[22px] mb-2">Calculator</h1>
+              <p class="font-[300]">
+                Uses data from past projects to provide better delivery
+                estimates
+              </p>
+            </div>
+            <img
+              src="./images/icon-calculator.svg"
+              alt="glass"
+              class="w-[5rem] h-[5rem] md:w-[3rem] md:h-[3rem] lg:w-[5rem] lg:h-[5rem]"
+            />
+          </div>
+          <div
+            class="flex flex-col justify-between items-end bg-white w-[380px] h-[310px] md:w-[240px] md:h-[200px] lg:w-[380px] lg:h-[300px] shadow-lg p-8 md:p-5 lg:p-8 rounded-b-xl border-t-6 border-[hsl(0,78%,62%)] rounded-t-sm"
+          >
+            <div class="mr-2">
+              <h1 class="font-[600] text-[22px] mb-2">Team Builder</h1>
+              <p class="font-[300]">
+                Scans our talent network to create the optimal team for your
+                project
+              </p>
+            </div>
+            <img
+              src="./images/icon-team-builder.svg"
+              alt="glass"
+              class="w-[5rem] h-[5rem] md:w-[3rem] md:h-[3rem] lg:w-[5rem] lg:h-[5rem]"
+            />
+          </div>
+        </div>
+        <div
+          class="flex flex-col justify-between items-end bg-white w-[380px] h-[310px] md:w-[240px] md:h-[200px] lg:w-[380px] lg:h-[300px] shadow-lg p-8 md:p-5 lg:p-8 rounded-b-xl border-t-6 border-[hsl(34,97%,64%)] rounded-t-sm"
+        >
+          <div class="mr-2">
+            <h1 class="font-[600] text-[22px] mb-2">Karma</h1>
+            <p class="font-[300]">
+              Regularly evaluates our talent to ensure quality
+            </p>
+          </div>
+          <img
+            src="./images/icon-karma.svg"
+            alt="glass"
+            class="w-[5rem] md:w-[3rem] md:h-[3rem] lg:w-[5rem] lg:h-[5rem]"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
